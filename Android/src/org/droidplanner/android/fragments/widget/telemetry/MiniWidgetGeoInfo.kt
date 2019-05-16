@@ -54,7 +54,7 @@ class MiniWidgetGeoInfo : TowerWidget() {
 
         val clipboardMgr = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
 
-        val container = view.findViewById(R.id.mini_widget_geo_info_layout)
+        val container = view.findViewById(R.id.mini_widget_geo_info_layout) as View
         container?.setOnClickListener {
             val drone = drone
             if(drone.isConnected) {

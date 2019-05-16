@@ -99,8 +99,8 @@ class TLogDataAdapter(val app: DroidPlannerApp, val fragmentMgr: FragmentManager
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder? {
         val containerView = LayoutInflater.from(parent.context).inflate(R.layout.list_item_tlog_data, parent, false)
         val dataLabel = containerView.findViewById(R.id.tlog_data_label) as TextView
-        val clearSession = containerView.findViewById(R.id.clear_tlog_session)
-        val editLabel = containerView.findViewById(R.id.rename_tlog_session)
+        val clearSession = containerView.findViewById<View>(R.id.clear_tlog_session)
+        val editLabel = containerView.findViewById<View>(R.id.rename_tlog_session)
         return ViewHolder(containerView, dataLabel, clearSession, editLabel)
     }
 

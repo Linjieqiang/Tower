@@ -21,7 +21,7 @@ import org.droidplanner.android.tlog.adapters.TLogDataAdapter.Listener
 class TLogDataPicker : DialogFragment(){
 
     private val noTLogMessageView by lazy {
-        getView()?.findViewById(R.id.no_tlogs_message)
+        getView()?.findViewById<View>(R.id.no_tlogs_message)
     }
 
     private var selectionListener : TLogDataAdapter.Listener? = null

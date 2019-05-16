@@ -85,23 +85,23 @@ public class FullWidgetSoloLinkVideo : BaseVideoWidget() {
     }
 
     private val widgetButtonBar by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.widget_button_bar)
+        view?.findViewById<View>(R.id.widget_button_bar)
     }
 
     private val takePhotoButton by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.sololink_take_picture_button)
+        view?.findViewById<View>(R.id.sololink_take_picture_button)
     }
 
     private val recordVideo by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.sololink_record_video_button)
+        view?.findViewById<View>(R.id.sololink_record_video_button)
     }
 
     private val fpvVideo by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.sololink_vr_video_button)
+        view?.findViewById<View>(R.id.sololink_vr_video_button)
     }
 
     private val touchCircleImage by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.sololink_gimbal_joystick)
+        view?.findViewById<View>(R.id.sololink_gimbal_joystick)
     }
 
     private val orientationListener = object : GimbalApi.GimbalOrientationListener {

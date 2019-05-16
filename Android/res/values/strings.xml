@@ -4,6 +4,9 @@
     tools:ignore="MissingTranslation">
 
     <!-- Generic strings -->
+    <string name="app_title">Tower</string>
+    <string name="baidu_api_key"></string>
+
     <string name="settings">Settings</string>
     <string name="label_general">General</string>
     <string name="label_other">Others</string>

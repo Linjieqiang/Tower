@@ -16,15 +16,15 @@ import org.droidplanner.android.fragments.widget.video.BaseUVCVideoWidget
 public class FullWidgetUVCLinkVideo : BaseUVCVideoWidget() {
 
     private val widgetButtonBar by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.widget_button_bar)
+        view?.findViewById<View>(R.id.widget_button_bar)
     }
 
     private val takePhotoButton by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.uvc_take_picture_button)
+        view?.findViewById<View>(R.id.uvc_take_picture_button)
     }
 
     private val recordVideo by lazy(LazyThreadSafetyMode.NONE) {
-        view?.findViewById(R.id.uvc_record_video_button)
+        view?.findViewById<View>(R.id.uvc_record_video_button)
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {

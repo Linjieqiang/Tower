@@ -48,11 +48,11 @@ class TLogPositionViewer : TLogViewer(), TLogEventListener {
     private var tlogPositionAdapter : TLogPositionEventAdapter? = null
 
     private val noDataView by lazy {
-        getView()?.findViewById(R.id.no_data_message)
+        getView()?.findViewById<View>(R.id.no_data_message)
     }
 
     private val loadingData by lazy {
-        getView()?.findViewById(R.id.loading_tlog_data)
+        getView()?.findViewById<View>(R.id.loading_tlog_data)
     }
 
     private val eventsView by lazy {
@@ -106,14 +106,15 @@ class TLogPositionViewer : TLogViewer(), TLogEventListener {
             tlogEventMap?.goToMyLocation();
         }
 
-        view.findViewById(R.id.drone_location_button)?.visibility = View.GONE
+        view.findViewById<View>(R.id.drone_location_button)?.visibility = View.GONE
 
         // Setup the zoom to fit button
-        view.findViewById(R.id.zoom_to_fit_button)?.apply {
+        view.findViewById<View>(R.id.zoom_to_fit_button)?.apply {
             visibility = View.VISIBLE
-            setOnClickListener {
-                tlogEventMap?.zoomToFit()
-            }
+            // TODO
+            //setOnClickListener {
+            //    tlogEventMap?.zoomToFit()
+            //}
         }
     }
 

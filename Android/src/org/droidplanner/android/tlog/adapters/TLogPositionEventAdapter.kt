@@ -102,7 +102,7 @@ class TLogPositionEventAdapter(context : Context, recyclerView: RecyclerView) :
 
     override fun onCreateBasicItemViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val container = LayoutInflater.from(parent.context).inflate(R.layout.list_item_tlog_position_event, parent, false)
-        val thumbnail = container.findViewById(R.id.event_thumbnail)
+        val thumbnail = container.findViewById(R.id.event_thumbnail) as View
         val timestamp = container.findViewById(R.id.event_timestamp) as TextView
         val altitude = container.findViewById(R.id.event_altitude) as TextView
         return ViewHolder(container, thumbnail, timestamp, altitude)

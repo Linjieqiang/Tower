@@ -108,7 +108,7 @@ public class UploaderService extends IntentService {
             final Notification notification = generateNotificationBuilder()
                 .setContentText("Uploading tlog data")
                 .build();
-            startForeground(ONGOING_UPLOAD_NOTIFICATION_ID, notification);
+//            startForeground(ONGOING_UPLOAD_NOTIFICATION_ID, notification);
 
             try {
                 int numUploaded = 0;

@@ -234,8 +234,8 @@ public class GoogleMapFragment extends SupportMapFragment implements DPMap,
                     .setInterval(USER_LOCATION_UPDATE_INTERVAL)
                     .setSmallestDisplacement(USER_LOCATION_UPDATE_MIN_DISPLACEMENT);
 
-            LocationServices.FusedLocationApi.requestLocationUpdates(getGoogleApiClient(), locationReq,
-                    locationCb, handler.getLooper());
+//            LocationServices.FusedLocationApi.requestLocationUpdates(getGoogleApiClient(), locationReq,
+//                    locationCb, handler.getLooper());
         }
     };
 

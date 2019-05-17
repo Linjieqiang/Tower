@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <!-- BaiduMap dependencies -->
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
